@@ -28,7 +28,7 @@
             cargoLock.lockFile = ./Cargo.lock;
           };
 
-        devShells.default = mkShell {
+        devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
             pkg-config
             openssl
