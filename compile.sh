@@ -1,0 +1,1 @@
+go run . && wasm-tools print -p out.wasm > out.wat
