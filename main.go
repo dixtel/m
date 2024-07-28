@@ -285,6 +285,8 @@ func main() {
 
 		2.5.3 Functions
 	*/
+
+	// HTTPFunc
 	wasm = append(wasm, section(
 		SECTION_CODE_ID,
 		spread(
@@ -326,7 +328,7 @@ func main() {
 		SECTION_DATA_ID,
 		vec(1,
 			spread(
-				LEB128_U32(0),                                                    // mode active
+				LEB128_U32(0),                                                      // mode active
 				[]byte{INSTR_I32_CONST}, LEB128_I32(100), []byte{INSTR_END_MARKER}, // mem offset
 				vec(11, []byte{
 					0x0068, 0x0065, 0x006c, 0x006c, 0x006f, 0x0020, 0x0077, 0x006f, 0x0072, 0x006c, 0x0064, // hello world

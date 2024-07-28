@@ -11,7 +11,7 @@ func TestBinaryRep(t *testing.T) {
 	// ))
 	// fmt.Println(strconv.FormatInt(200, 2))
 
-	fmt.Println(leb128_u32(624485))
+	// fmt.Println(leb128_u32(624485))
 
 }
 

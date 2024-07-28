@@ -8,3 +8,10 @@ func Has[T comparable](s []T, x T) bool {
 	}
 	return false
 }
+
+func Spread[T any](s ...[]T) (ret []T) {
+	for _, s2 := range s {
+		ret = append(ret, s2...)
+	}
+	return ret
+}
